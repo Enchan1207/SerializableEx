@@ -11,7 +11,8 @@ class JSONSerializer():
     Serializableなオブジェクトをjson形式に変換するシリアライザ。
     """
 
-    def serialize(self, object: Union[Serializable, Dict[str, Any]]) -> str:
+    @staticmethod
+    def serialize(object: Union[Serializable, Dict[str, Any]]) -> str:
 
         """
         Serializableオブジェクトまたは辞書オブジェクトをjsonシリアライズします。
@@ -37,10 +38,3 @@ class JSONSerializer():
         result = json.JSONEncoder().encode(dict_represented)
         
         return result
-
-    def deserialize(self, serialized: str) -> Dict[str, Any]:
-        """
-        jsonシリアライズされたデータを辞書型にデシリアライズします。
-        """
-
-        return json.JSONDecoder().decode(serialized)
