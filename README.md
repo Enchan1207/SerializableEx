@@ -46,7 +46,7 @@ And implement two methods shown below:
 
 Yeah it's time to magic:
 
-```
+```python
 some_class = SomeClass("user", 19)
 some_class_serialized = some_class.serialized()
 
