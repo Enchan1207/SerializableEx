@@ -1,7 +1,7 @@
 #
 # オブジェクトのシリアライズについて考える
 #
-import serializer
+from src import serializer
 from someclass import SomeClass
 import sys
 from typing import List
