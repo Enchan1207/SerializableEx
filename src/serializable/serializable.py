@@ -21,7 +21,7 @@ class Serializable():
         raise NotImplementedError("serialized() -> Dict[str, Any] is not implemented")
 
     @staticmethod
-    def deserialized(serialized: str) -> Optional[Serializable]:
+    def deserialized(serialized: Dict[str, Any]) -> Optional[Serializable]:
         """
         シリアライズされたデータからインスタンスを復元します。
         
